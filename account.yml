@@ -35,17 +35,7 @@ management:
    
  ribbon:
   eureka:
-    enabled: true  
-   
-logging:
-  console: off
-  file: ${logging.path}/uaa.log
-  path: /var/log/uaa
-  level:
-    root: info
-  pattern:
-    file: %d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n
-    console: %d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n
+    enabled: true
 
 app:
   name: Ecommerce-starter
