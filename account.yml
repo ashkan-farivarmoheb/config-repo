@@ -14,7 +14,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:postgresql://localhost/auth
     username: kian
-    password:
+    password: kian
     hikari:
       maximum-pool-size: 50
   jpa:
