@@ -1,0 +1,23 @@
+server:
+  port: ${PORT:9411}
+
+spring:
+  rabbitmq:
+    host: 192.168.126.219
+    port: 30000
+    username: guest
+    password: guest
+  sleuth:
+    enabled: false
+zipkin:
+  store:
+    type: mem
+
+logging:
+  file: build/zipkin-server.log
+  level:
+    org.springframework.cloud: INFO
+
+management:
+ security: 
+   enabled: false

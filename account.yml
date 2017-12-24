@@ -28,6 +28,14 @@ spring:
       
   cache:
     type: redis
+
+  sleuth:
+    sampler:
+      percentage: 1.0
+
+logging:
+  level:
+    org.springframework.cloud.sleuth: INFO
       
 management:
  security: 
@@ -37,12 +45,5 @@ management:
   eureka:
     enabled: true
 
-logging:
-  console: off
-  file: ${logging.path}/uaa.log
-  path: /var/log/uaa
-  level:
-    root: info
-    
 app:
   name: Ecommerce-starter
