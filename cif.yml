@@ -24,6 +24,10 @@ spring:
     port: 30000
     username: guest
     password: guest
+    
+  sleuth:
+    sampler:
+      percentage: 1.0
           
 ribbon:
   eureka:
@@ -32,3 +36,7 @@ ribbon:
 management:
  security: 
    enabled: false
+
+logging:
+  level:
+    org.springframework.cloud.sleuth: INFO
