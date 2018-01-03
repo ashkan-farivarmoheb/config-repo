@@ -9,11 +9,11 @@ security:
           MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmtBxQSsOHBJBobOX6LeOy5Pt1eM8jHeKvqCLNJomHD/BXGj0w+YY3DmeHRmiEFZpc90DQm7HUQReL+XwWJHiYX+J5FVBsgOMiZUDLs1KiIaQGR72Uc/IvwTAnw6EWfWkinRgf/k7/bevt8BB+YLkCRFQxISn4++eP1v0RadqwGjQVbsaxB+ePQKR9tgTcgTQ25x5oHKCFk/b5GvS+BBfYtsYpFQ4JbE6vTTe+J+o9R4O033x6wyIGkWOYw9sVOf01ElYqFbAa9CGqpE4wpRliEIU3jYMBfqQ0bZimVHHOdiHaSKP9OuW68tfNFkXWuuhIGng6BOm7TbhVOeSyCdDywIDAQAB
           -----END PUBLIC KEY-----
       client:
-        accessTokenUri: http://localhost:9080/uaa/oauth/token
-        userAuthorizationUri: http://localhost9080/uaa/oauth/authorize
+        accessTokenUri: http://gateway:9080/uaa/oauth/token
+        userAuthorizationUri: http://gateway:9080/uaa/oauth/authorize
       resource:
 #        loadBalanced: true
-        user-info-uri:  http://localhost:9080/uaa/users/current
+        user-info-uri:  http://gateway:9080/uaa/users/current
 
 server:  
   port: ${PORT:3333}
@@ -24,7 +24,7 @@ spring:
     port: 30000
     username: guest
     password: guest
-    
+
   sleuth:
     sampler:
       percentage: 1.0
