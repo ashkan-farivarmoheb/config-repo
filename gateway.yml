@@ -24,7 +24,7 @@ zuul:
     socket-timeout-millis: 20000
 
   routes:
-    account:
+    uaa:
         path: /uaa/**
         serviceId: uaa
         stripPrefix: true

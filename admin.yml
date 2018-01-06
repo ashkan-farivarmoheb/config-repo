@@ -35,7 +35,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: http://registry:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
       
 management:
   security: 
